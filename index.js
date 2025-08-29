@@ -27,7 +27,7 @@ express.use(require("./structure/mcp.js"));
 
 const port = process.env.PORT || 3551;
 express.listen(port, () => {
-    console.log("LawinServer started listening on port", port);
+    console.log("LawinHax started listening on port", port);
 
     require("./structure/xmpp.js");
 }).on("error", (err) => {
@@ -38,7 +38,7 @@ express.listen(port, () => {
 });
 
 try {
-    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer"))) fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer"));
+    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinHaxx"))) fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinHaxx"));
 } catch (err) {
     // fallback
     if (!fs.existsSync(path.join(__dirname, "ClientSettings"))) fs.mkdirSync(path.join(__dirname, "ClientSettings"));
@@ -46,7 +46,7 @@ try {
 
 // if endpoint not found, return this error
 express.use((req, res, next) => {
-    var XEpicErrorName = "errors.com.lawinserver.common.not_found";
+    var XEpicErrorName = "errors.com.LawinHaxx.common.not_found";
     var XEpicErrorCode = 1004;
 
     res.set({

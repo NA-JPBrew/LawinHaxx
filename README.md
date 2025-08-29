@@ -1,7 +1,7 @@
 <div align=center>
-  <img src="https://i.ibb.co/Bcj3VXm/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3932373733393930313534.png" alt="LawinServer Logo">
+  <img src="https://i.ibb.co/Bcj3VXm/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3932373733393930313534.png" alt="LawinHaxx Logo">
 
-  ### LawinServer is a private server that supports all Fortnite versions!
+  ### LawinHaxx is a private server that supports all Fortnite versions!
   
 </div>
 <br>
@@ -72,9 +72,9 @@
 - Leaderboards (v1)
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
 - Joining gameservers using the matchmaker - check out the GameServer seciton in config.ini for more details
-##### * Included in the [LawinServer Addon](https://github.com/PRO100KatYT/LawinServerAddon). To install it, merge its `public` folder with the one in your LawinServer folder. [(Direct download link)](https://github.com/PRO100KatYT/LawinServerAddon/archive/refs/heads/main.zip)
+##### * Included in the [LawinHaxx Addon](https://github.com/PRO100KatYT/LawinHaxxAddon). To install it, merge its `public` folder with the one in your LawinHaxx folder. [(Direct download link)](https://github.com/PRO100KatYT/LawinHaxxAddon/archive/refs/heads/main.zip)
 
-## How to host/use LawinServer
+## How to host/use LawinHaxx
 1) Install [NodeJS](https://nodejs.org/en/)
 2) Run "install_packages.bat" (This file isn't required after the packages are installed.)
 3) Run "start.bat", It should say "Started listening on port 3551"

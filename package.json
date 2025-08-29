@@ -1,7 +1,7 @@
 {
-  "name": "lawinserver",
+  "name": "LawinServer",
   "version": "1.0.0",
-  "description": "A fortnite backend which supports both BR and STW for every single fortnite build.",
+  "description": "Modded by Aiu. Backend Created By Lawin0129.",
   "main": "index.js",
   "dependencies": {
     "cookie-parser": "^1.4.6",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lawin0129/LawinServer.git"
+    "url": "git+https://github.com/NA-JPBrew/LawinHaxx.git"
   },
   "keywords": [
     "fortnite",
@@ -27,10 +27,10 @@
     "node",
     "server"
   ],
-  "author": "Lawin0129",
+  "author": "NA-JPBrew",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Lawin0129/LawinServer/issues"
+    "url": "https://github.com/NA-JPBrew/LawinHaxx/issues"
   },
-  "homepage": "https://github.com/Lawin0129/LawinServer#readme"
+  "homepage": "https://github.com/NA-JPBrew/LawinHaxx#readme"
 }

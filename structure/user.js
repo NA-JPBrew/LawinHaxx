@@ -3,7 +3,7 @@ const express = Express.Router();
 const fs = require("fs");
 const path = require("path");
 const iniparser = require("ini");
-const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
+const config = fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini"), "utf8")
 var Memory_CurrentAccountID = config.Config.displayName;
 
 express.get("/account/api/public/account", async (req, res) => {
@@ -53,9 +53,9 @@ express.get("/account/api/public/account/:accountId", async (req, res) => {
         "numberOfDisplayNameChanges": 0,
         "ageGroup": "UNKNOWN",
         "headless": false,
-        "country": "US",
+        "country": "JP",
         "lastName": "Server",
-        "preferredLanguage": "en",
+        "preferredLanguage": "ja",
         "canUpdateDisplayName": false,
         "tfaEnabled": false,
         "emailVerified": true,
@@ -78,7 +78,7 @@ express.post("/auth/v1/oauth/token", async (req, res) => {
         "token_type": "bearer",
         "expires_in": 28800,
         "expires_at": "9999-12-31T23:59:59.999Z",
-        "nonce": "lawinserver",
+        "nonce": "LawinHaxx",
         "features": ["AntiCheat", "Connect", "Ecom", "Inventories", "LockerService"],
         "deployment_id": "lawinsdeploymentidlol",
         "organization_id": "lawinsorganizationidlol",
@@ -154,7 +154,7 @@ express.get("/account/api/oauth/verify", async (req, res) => {
 
 express.post("/account/api/oauth/token", async (req, res) => {
     if (config.Config.bUseConfigDisplayName == false) {
-        Memory_CurrentAccountID = req.body.username || "LawinServer"
+        Memory_CurrentAccountID = req.body.username || "LawinHaxx"
     }
 
     if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];

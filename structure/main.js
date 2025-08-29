@@ -71,7 +71,7 @@ express.get("/launcher/api/public/distributionpoints/", async (req, res) => {
             "https://download2.epicgames.com/",
             "https://download3.epicgames.com/",
             "https://download4.epicgames.com/",
-            "https://lawinserver.ol.epicgames.com/"
+            "https://LawinHaxx.ol.epicgames.com/"
         ]
     });
 })
@@ -79,22 +79,22 @@ express.get("/launcher/api/public/distributionpoints/", async (req, res) => {
 express.get("/launcher/api/public/assets/*", async (req, res) => {
     res.json({
         "appName": "FortniteContentBuilds",
-        "labelName": "LawinServer",
+        "labelName": "LawinHaxx",
         "buildVersion": "++Fortnite+Release-20.00-CL-19458861-Windows",
         "catalogItemId": "5cb97847cee34581afdbc445400e2f77",
         "expires": "9999-12-31T23:59:59.999Z",
         "items": {
             "MANIFEST": {
-                "signature": "LawinServer",
-                "distribution": "https://lawinserver.ol.epicgames.com/",
-                "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
+                "signature": "LawinHaxx",
+                "distribution": "https://LawinHaxx.ol.epicgames.com/",
+                "path": "Builds/Fortnite/Content/CloudDir/LawinHaxx.manifest",
                 "hash": "55bb954f5596cadbe03693e1c06ca73368d427f3",
                 "additionalDistributions": []
             },
             "CHUNKS": {
-                "signature": "LawinServer",
-                "distribution": "https://lawinserver.ol.epicgames.com/",
-                "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
+                "signature": "LawinHaxx",
+                "distribution": "https://LawinHaxx.ol.epicgames.com/",
+                "path": "Builds/Fortnite/Content/CloudDir/LawinHaxx.manifest",
                 "additionalDistributions": []
             }
         },
@@ -105,7 +105,7 @@ express.get("/launcher/api/public/assets/*", async (req, res) => {
 express.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => {
     res.set("Content-Type", "application/octet-stream")
 
-    const manifest = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinServer.manifest"));
+    const manifest = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinHaxx.manifest"));
 
     res.status(200).send(manifest).end();
 })
@@ -113,7 +113,7 @@ express.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => 
 express.get("/Builds/Fortnite/Content/CloudDir/*.chunk", async (req, res) => {
     res.set("Content-Type", "application/octet-stream")
 
-    const chunk = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinServer.chunk"));
+    const chunk = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinHaxx.chunk"));
 
     res.status(200).send(chunk).end();
 })
@@ -283,7 +283,7 @@ express.get("/fortnite/api/game/v2/world/info", async (req, res) => {
 })
 
 express.post("/fortnite/api/game/v2/chat/*/*/*/pc", async (req, res) => {
-    res.json({ "GlobalChatRooms": [{"roomName":"lawinserverglobal"}] })
+    res.json({ "GlobalChatRooms": [{"roomName":"LawinHaxxglobal"}] })
 })
 
 express.post("/fortnite/api/game/v2/chat/*/recommendGeneralChatRooms/pc", async (req, res) => {
